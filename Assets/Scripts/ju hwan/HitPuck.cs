@@ -23,13 +23,13 @@ public class HitPuck : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Puck"))
+        if (collision.gameObject.CompareTag("Puck"))        // 퍽과 부딪히면
         {
             Rigidbody2D puckRb = collision.gameObject.GetComponent<Rigidbody2D>();
 
             Vector3 direction = currentPos - pastPos;
 
-            puckRb.AddForce(direction * (1.0f / Time.deltaTime), ForceMode2D.Impulse);
+            puckRb.AddForce(direction * (1.0f / Time.deltaTime), ForceMode2D.Impulse);  // 퍽을 플레이어 이동방향으로 힘을 가함
 
             /*Rigidbody2D puckRb = collision.gameObject.GetComponent<Rigidbody2D>();
             Rigidbody2D thisRb = gameObject.GetComponent<Rigidbody2D>();

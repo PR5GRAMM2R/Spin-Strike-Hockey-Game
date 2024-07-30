@@ -27,9 +27,9 @@ public class EnemyMove : MonoBehaviour
     {
         if (isMouseDown)
         {
-            currentPos = GetMouseWorldPos() + offset;
+            currentPos = GetMouseWorldPos() + offset;   // 마우스로 끌어오는 좌표를 적용
 
-            currentPos.x = Mathf.Clamp(currentPos.x, xMin, xMax);
+            currentPos.x = Mathf.Clamp(currentPos.x, xMin, xMax);       // 플레이어가 자신의 영역을 벗어나지 않게 함
             currentPos.y = Mathf.Clamp(currentPos.y, yMin, yMax);
 
             transform.position = currentPos;
@@ -50,7 +50,7 @@ public class EnemyMove : MonoBehaviour
     Vector3 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = mainCamera.WorldToScreenPoint(transform.position).z;
+        mousePos.z = mainCamera.WorldToScreenPoint(transform.position).z;   // 화면 상의 마우스 좌표를 월드좌표계로 변경
         return mainCamera.ScreenToWorldPoint(mousePos);
     }
 }

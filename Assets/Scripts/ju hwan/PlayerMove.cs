@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
         xMax = bottomWall_2.GetComponent<BoxCollider2D>().bounds.center.x + bottomWall_2.GetComponent<BoxCollider2D>().size.x / 2 - r;
         yMin = leftWall.GetComponent<BoxCollider2D>().bounds.center.y - leftWall.GetComponent<BoxCollider2D>().size.x / 2 + r;
         yMax = leftWall.GetComponent<BoxCollider2D>().bounds.center.y + leftWall.GetComponent<BoxCollider2D>().size.x / 2 - r;
-    }
+    }           // 
 
     // Update is called once per frame
     void Update()
