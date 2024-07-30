@@ -69,6 +69,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         connectionInfoText.text = "Connected with Room.";
         connectionInfoText.color = Color.green; // 방에 성공적으로 연결되면 초록색으로 설정
-        PhotonNetwork.LoadLevel("InGame 1");
+        PhotonNetwork.LoadLevel("InGame");
     }
 }
