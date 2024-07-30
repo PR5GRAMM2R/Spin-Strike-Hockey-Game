@@ -70,3 +70,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Firebase configuration files
+/google-services.json
+/GoogleService-Info.plist
+
+# PUN2 Photon Unity Networking
+/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+/Assets/Photon/PhotonUnityNetworking/Demos
+/Assets/Photon/PhotonChat/Resources/ChatSettings.asset
