@@ -2,26 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerHitPuck : MonoBehaviour
+public class DetectPuck : MonoBehaviour
 {
-    /*public PhysicsMaterial2D bouncy;
+    public PhysicsMaterial2D bouncy;
 
     public float bouncyRed = 5.0f;
-    public float bouncyGreen = 0.5f;*/
+    public float bouncyGreen = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Puck"))
         {
@@ -37,12 +37,12 @@ public class PowerHitPuck : MonoBehaviour
             // Green    |   Red
             // Red      |   Green
 
-            if(upDot > 0 && rightDot > 0)
+            if (upDot > 0 && rightDot > 0)
             {
                 bouncy.bounciness = bouncyRed;
             }
-            else if(upDot > 0 && rightDot <= 0) 
-            { 
+            else if (upDot > 0 && rightDot <= 0)
+            {
                 bouncy.bounciness = bouncyGreen;
             }
             else if (upDot <= 0 && rightDot > 0)
@@ -54,5 +54,5 @@ public class PowerHitPuck : MonoBehaviour
                 bouncy.bounciness = bouncyGreen;
             }
         }
-    }*/
+    }
 }
