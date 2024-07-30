@@ -14,8 +14,7 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-# Recordings can get excessive in size
-/[Rr]ecordings/
+/Recording/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -71,11 +70,26 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Firebase 관련 대용량 파일 무시
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_1_0.bundle
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_1_0.so
+
 # Firebase configuration files
 /google-services.json
 /GoogleService-Info.plist
+
+# Firebase cache and lock files
+/[Ll]ibrary/Firebase/
+/[Ll]ibrary/FirebaseCrashlytics/
 
 # PUN2 Photon Unity Networking
 /Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
 /Assets/Photon/PhotonUnityNetworking/Demos
 /Assets/Photon/PhotonChat/Resources/ChatSettings.asset
+
+# PUN2 cache and log files
+/[Ll]ibrary/Photon/
+
+# Unity Cache
+[Ll]ibrary/Artifacts/
+/[Ll]ibrary/ScriptAssemblies/
