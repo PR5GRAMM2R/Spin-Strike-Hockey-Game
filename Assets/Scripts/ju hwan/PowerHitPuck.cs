@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerHitPuck : MonoBehaviour
 {
-    /*public PhysicsMaterial2D bouncy;
+    /*public PhysicsMaterial2D bouncy;      // 현재 아무 의미 없는 스크립트
 
     public float bouncyRed = 5.0f;
     public float bouncyGreen = 0.5f;*/
