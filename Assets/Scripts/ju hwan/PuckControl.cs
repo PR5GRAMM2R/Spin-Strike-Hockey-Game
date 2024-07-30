@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PuckControl : MonoBehaviour
 {
@@ -10,13 +12,21 @@ public class PuckControl : MonoBehaviour
     private float pastTime;
     private float currentTime;
 
+    public TextMeshProUGUI scoreStackedText;
+    //public int scoreStacked = 0;
+
+    private GameManager1 gameManagerScript;
+
     // Start is called before the first frame update
     void Start()
     {
         puckRb = GetComponent<Rigidbody2D>();
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManager1>();
 
-        pastTime = Time.time;
+        pastTime = Time.time;   
         currentTime = Time.time;
+
+        gameManagerScript.scoreStacked = 0;
     }
 
     // Update is called once per frame
@@ -40,6 +50,15 @@ public class PuckControl : MonoBehaviour
         if(velocity > 15)
         {
             puckRb.velocity *= 15 / velocity;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            gameManagerScript.scoreStacked++;
+            scoreStackedText.text = gameManagerScript.scoreStacked.ToString();
         }
     }
 }
