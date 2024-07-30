@@ -29,7 +29,7 @@ public class DetectPuck : MonoBehaviour
         {
             Vector2 lookUpDirection = transform.up;
             Vector2 lookRightDirection = transform.right;
-            //Debug.Log(lookDirection);
+            //Debug.Log(lookRightDirection);
 
             float upDot = Vector2.Dot(playerToPuck, lookUpDirection);
             float rightDot = Vector2.Dot(playerToPuck, lookRightDirection);
@@ -40,18 +40,22 @@ public class DetectPuck : MonoBehaviour
             if (upDot > 0 && rightDot > 0)
             {
                 bouncy.bounciness = bouncyRed;
+                //Debug.Log("1");
             }
             else if (upDot > 0 && rightDot <= 0)
             {
                 bouncy.bounciness = bouncyGreen;
+                //Debug.Log("4");
             }
             else if (upDot <= 0 && rightDot > 0)
             {
-                bouncy.bounciness = bouncyRed;
+                bouncy.bounciness = bouncyGreen;
+                //Debug.Log("2");
             }
             else if (upDot <= 0 && rightDot <= 0)
             {
-                bouncy.bounciness = bouncyGreen;
+                bouncy.bounciness = bouncyRed;
+                //Debug.Log("3");
             }
         }
     }
