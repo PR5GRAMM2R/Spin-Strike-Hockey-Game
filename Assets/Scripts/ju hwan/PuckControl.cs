@@ -12,7 +12,7 @@ public class PuckControl : MonoBehaviour
     private float pastTime;
     private float currentTime;
 
-    public TextMeshProUGUI scoreStackedText;
+    private TextMeshProUGUI scoreStackedText;
     //public int scoreStacked = 0;
 
     private GameManager1 gameManagerScript;
@@ -25,6 +25,8 @@ public class PuckControl : MonoBehaviour
 
         pastTime = Time.time;   
         currentTime = Time.time;
+
+        scoreStackedText = GameObject.Find("GameManager").GetComponent<GameManager1>().scoreStackedText;
 
         gameManagerScript.scoreStacked = 0;
     }
