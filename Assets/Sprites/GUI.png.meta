@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 56d84991286850f428b4e7df0cca7380
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: window
+  - first:
+      213: 21300002
+    second: window1
+  - first:
+      213: 21300004
+    second: jotstick_back
+  - first:
+      213: 21300006
+    second: joystikc
+  - first:
+      213: 21300008
+    second: progress_bar1
+  - first:
+      213: 21300010
+    second: progress_bar_background
+  - first:
+      213: 21300012
+    second: plus
+  - first:
+      213: 21300014
+    second: button1
+  - first:
+      213: 21300016
+    second: button_pushed
+  - first:
+      213: 21300018
+    second: pause
+  - first:
+      213: 21300020
+    second: rocket
+  - first:
+      213: 21300022
+    second: bullets
+  - first:
+      213: 21300024
+    second: button_active
+  - first:
+      213: 21300026
+    second: long_arrow_right
+  - first:
+      213: 21300028
+    second: progress_bar_background1
+  - first:
+      213: 21300030
+    second: back_arrow
+  - first:
+      213: 21300032
+    second: progress_bar
+  - first:
+      213: 21300034
+    second: long_arrow_left
+  - first:
+      213: 21300036
+    second: arrow_left
+  - first:
+      213: 21300038
+    second: arrow_right
+  - first:
+      213: 21300040
+    second: bar_blue
+  - first:
+      213: 21300042
+    second: bar_green
+  - first:
+      213: 21300044
+    second: bar_purple
+  - first:
+      213: 21300046
+    second: bar_red
+  - first:
+      213: 21300048
+    second: atlas_28
+  - first:
+      213: 21300050
+    second: background_bar
+  - first:
+      213: 21300052
+    second: bar_blue1
+  - first:
+      213: 21300054
+    second: bar_red1
+  - first:
+      213: 21300056
+    second: atlas_32
+  - first:
+      213: 21300058
+    second: bar_green1
+  - first:
+      213: 21300060
+    second: background_bar1
+  - first:
+      213: 21300062
+    second: bar_purple1
+  - first:
+      213: 21300064
+    second: arrow_left1
+  - first:
+      213: 21300066
+    second: arrow_right1
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 16
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: button1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2648
+        width: 877
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2528
+        width: 489
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_arrow
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1741
+        width: 583
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrow_left1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 637
+        width: 242
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrow_right1
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 637
+        width: 239
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ae264614d1ff3f94890c6fdf3fa54e5c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      arrow_left1: 21300064
+      arrow_right1: 21300066
+      back_arrow: 21300030
+      button1: 21300014
+      pause: 21300018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
