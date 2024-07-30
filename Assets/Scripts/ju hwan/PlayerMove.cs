@@ -11,15 +11,26 @@ public class PlayerMove : MonoBehaviour
 
     private Vector3 currentPos;
 
-    public float xMin = -2.4f;
-    public float xMax = 2.4f;
-    public float yMin = -4.4f;
-    public float yMax = -0.6f;
+    public GameObject leftWall;
+    public GameObject bottomWall_1;
+    public GameObject bottomWall_2;
+
+    public float xMin;
+    public float xMax;
+    public float yMin;
+    public float yMax;
 
     // Start is called before the first frame update
     void Start()
     {
         currentPos = transform.position;
+
+        float r = GetComponent<CircleCollider2D>().bounds.size.x / 2;
+
+        xMin = bottomWall_1.GetComponent<BoxCollider2D>().bounds.center.x - bottomWall_1.GetComponent<BoxCollider>().size.x / 2 + r;
+        xMax = bottomWall_2.GetComponent<BoxCollider2D>().bounds.center.x + bottomWall_2.GetComponent<BoxCollider>().size.x / 2 - r;
+        yMin = leftWall.GetComponent<BoxCollider2D>().bounds.center.y - leftWall.GetComponent<BoxCollider>().size.x / 2 + r;
+        yMax = leftWall.GetComponent<BoxCollider2D>().bounds.center.y + leftWall.GetComponent<BoxCollider>().size.x / 2 - r;
     }
 
     // Update is called once per frame
