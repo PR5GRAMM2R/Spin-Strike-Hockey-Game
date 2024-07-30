@@ -249,10 +249,10 @@ TextureImporter:
       name: pause
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 2528
-        width: 489
-        height: 485
+        x: 1071
+        y: 3105
+        width: 946
+        height: 921
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
