@@ -10,7 +10,11 @@ public class PlayerMove : MonoBehaviour
     private Vector3 offset;
 
     private Vector3 currentPos;
-    public bool isHitWalls = false;
+
+    public float xMin = -2.4f;
+    public float xMax = 2.4f;
+    public float yMin = -4.4f;
+    public float yMax = -0.6f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +27,13 @@ public class PlayerMove : MonoBehaviour
     {
         if (isMouseDown)
         {
-            if (!isHitWalls)
-            {
-                currentPos = GetMouseWorldPos() + offset;
-            }
+            currentPos = GetMouseWorldPos() + offset;
 
-            isHitWalls = false;
+            currentPos.x = Mathf.Clamp(currentPos.x, xMin, xMax);
+            currentPos.y = Mathf.Clamp(currentPos.y, yMin, yMax);
+
+            transform.position = currentPos;
         }
-
-        transform.position = currentPos;
     }
 
     private void OnMouseDown()
@@ -52,11 +54,11 @@ public class PlayerMove : MonoBehaviour
         return mainCamera.ScreenToWorldPoint(mousePos);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Boundary"))
         {
             isHitWalls = true;
         }
-    }
+    }*/
 }
