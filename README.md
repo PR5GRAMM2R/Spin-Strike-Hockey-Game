@@ -1,9 +1,9 @@
 # Spin Strike Hockey Game
 
-![README_Image01](https://github.com/user-attachments/assets/1410b678-e120-4c38-ad24-f07225870990)
-
 Strike Hockey Game 이지만, Hockey Ball 에 초록색과 빨간색 구역을 나누어 각 구역마다 튕겨나가는 힘이 다른 특성을 부여하였다.
 ( Unity 와 C# 으로 제작 )
+
+![README_Image01](https://github.com/user-attachments/assets/1410b678-e120-4c38-ad24-f07225870990)
 
 
 
